@@ -71,6 +71,16 @@
   background-color: white;
 }
 
+.theme-firebug .devtools-sidebar-tabs > tabs > tab {
+  min-width: 0;
+  -moz-box-flex: 0;
+  padding-bottom: 0;
+}
+
+.theme-firebug .devtools-sidebar-tabs > tabs > tab > .tab-middle {
+  padding: 1px 3px 2px;
+}
+
 /*************************************************************************************************/
 /* Element Picker */
 
@@ -156,4 +166,3 @@
 .theme-firebug #toolbox-close > image {
   filter: none !important;
 }
-
