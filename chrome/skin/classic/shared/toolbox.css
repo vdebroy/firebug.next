@@ -20,6 +20,8 @@
 
 .theme-firebug .devtools-sidebar-tabs > tabs {
   height: 28px;
+  background-color: rgb(219, 234, 249) !important;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2));
 }
 
 /******************************************************************************/
@@ -87,13 +89,23 @@
   border: 1px solid transparent !important;
 }
 
+.theme-firebug #toolbox-tab-options::before {
+  content: url(chrome://firebug/skin/options.svg);
+  display: block;
+  margin: 4px 7px 0px;
+}
+
 .theme-firebug #toolbox-tab-options image {
-  display: inline;
+  display: none;
 }
 
 .theme-firebug #toolbox-tab-options:hover {
   border: 1px transparent solid !important;
   box-shadow: none !important;
+}
+
+.theme-firebug #toolbox-tab-options:not([selected]):hover::before {
+  filter: url(chrome://firebug/skin/filters.svg#darken);
 }
 
 .theme-firebug #toolbox-tab-options[selected] {
